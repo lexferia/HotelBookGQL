@@ -16,8 +16,8 @@ namespace HotelBookGQL.Models
         public string Name { get; set; }
 
         [Required]
-        [GraphQLDescription("Room type. 1 = Single, 2 = Couple, 4 = Family, 8 = Group")]
-        public int Type { get; set; } // Single || Couple || Family || Group
+        [GraphQLDescription("Room type. 1 = Single - Ordinary, 2 = Single - Deluxe, 4 = Family - Ordinary, 8 = Family - Deluxe")]
+        public int Type { get; set; } // Single - Ordinary || Single - Deluxe || Family - Ordinary || Family - Deluxe
         
         [Required]
         [GraphQLDescription("Room status. 1 = Available, 2 = Unavailable")]
