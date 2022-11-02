@@ -37,4 +37,6 @@ app.UseGraphQLVoyager(options: new VoyagerOptions()
 
 app.UseWebSockets();
 
+PrepDb.PrepPopulation(app);
+
 app.Run();
